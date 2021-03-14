@@ -1,20 +1,11 @@
-async function handleRequest(request) {
-  return new Response(JSON.stringify(
-  // This is actually your JSON. Because this is JavaScript, you can also add in comments if you like.
 {
-  "applinks": {
-    "details": [
-      {
-         "appID": "Q94XRK95RT.io.beatscratch.beatscratchFlutterRedux",
-         "paths": [ "/app/", "/app"]
-      }
-    ]
-   }
-}) + "\n"
-, {
-  headers: {
-      "content-type": "application/json",
-    },
-  status: 200
-  })
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "XYWQM7AL6Z.com.4z-lab.HiddenTruth",
+                "paths": [ "dmitriits*" ]
+            }
+        ]
+    }
 }
