@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <title>File</title>
+</head>
+<body>
+<main>
+</main>
+<script>addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+/**
+ * Respond to the request
+ * @param {Request} request
+ */
+async function handleRequest(request) {
+  return new Response(JSON.stringify(
+  // This is actually your JSON. Because this is JavaScript, you can also add in comments if you like.
 {
     "applinks": {
         "apps": [],
@@ -8,4 +30,13 @@
             }
         ]
     }
-}
+}) + "\n"
+, {
+  headers: {
+      "content-type": "application/json",
+    },
+  status: 200
+  })
+}</sctipt>
+</body>
+</html>
